@@ -885,6 +885,7 @@ section#section02 > div > div.body > .img_cont > img {
 
   ul.showMenu {
     height: 250px;
+    background: linear-gradient(46deg, rgb(0, 6, 57) 0%, rgb(69, 81, 160) 100%, rgba(70, 89, 212, 1) 100%);
   }
 
   ul.showMenu li {
