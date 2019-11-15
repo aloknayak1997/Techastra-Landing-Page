@@ -108,7 +108,7 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#212867', endColorstr='#4659D4', GradientType=1);
   /* ie6-9 */
   overflow: hidden;
-  clip-path: url(#wave);
+  /* clip-path: url(#wave); */
 }
 
 /*** Navigation Styles ***/
@@ -533,8 +533,16 @@ section > .content {
 .platforms > img {
   width: 15vw;
   margin: 0 35px;
+  filter: grayscale(1);
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
 }
 
+
+.platforms > img:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
 
 .polygon {
   width: 20vw;
@@ -691,7 +699,7 @@ section#section5 > div {
 .form > div > input {
   border: none;
   padding: 11px;
-  margin: 5px 2px;
+  margin: 8px 9px;
   border-radius: 4px;
   width: 50%;
 }
@@ -740,13 +748,31 @@ section#section5 > div:last-child > div > div {
   background: #ffffff;
   color: #2f74be;
   height: fit-content;
-  padding: 12px 60px;
+  padding: 21px 60px;
   border-radius: 4px;
   font-family: MyriaSemiBold;
-  margin: 5px 0;
+  margin: 4px 10px;
   border: aliceblue;
   cursor: pointer;
 }
+
+section#section02 > div > div.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section#section02 > div > div.body > .img_cont{
+  overflow:hidden;
+  border-radius: 10px;
+  margin: 11px;
+  height: 300px;
+}
+
+section#section02 > div > div.body > .img_cont > img {
+  width: 300px;
+}
+
 
 @keyframes cloud {
   from {
@@ -1008,6 +1034,7 @@ border-right: 40vw solid transparent;
 }
 .platforms > img {
   width: 28vw;
+  margin: 35px 25px;
 }
 }
 
