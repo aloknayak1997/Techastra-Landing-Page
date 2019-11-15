@@ -882,10 +882,16 @@ section#section02 > div > div.body > .img_cont > img {
     transition: all 0.3s;
     left: 0;
   }
+  nav.navShadow > div > ul.showMenu {
+    height: 250px;
+    background:  #fff !important;
+    top: 75px !important;
+  }
 
   ul.showMenu {
     height: 250px;
     background: linear-gradient(46deg, rgb(0, 6, 57) 0%, rgb(69, 81, 160) 100%, rgba(70, 89, 212, 1) 100%);
+    top: 75px !important;
   }
 
   ul.showMenu li {
